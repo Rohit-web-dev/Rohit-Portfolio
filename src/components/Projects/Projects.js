@@ -20,6 +20,7 @@ import ample from "../../Assets/Projects/amplePoints.png";
 import adoption from "../../Assets/Projects/dogAdop.png";
 import pointer from "../../Assets/Projects/pointer.png";
 import dpboss from "../../Assets/Projects/dpboss.png";
+import emaar from "../../Assets/Projects/emaar.png";
 
 function Projects() {
   return (
@@ -27,21 +28,35 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are all projects I've worked on experienced.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col lg={4} md={6} className="project-card">
             <ProjectCard
+              imgPath={emaar}
+              isBlog={false}
+              title="Plot 360"
+              useTech="Next.js, Redux(RTK), Bootstrap, API Integration"
+              duration="August 2024 - Inprogress"
+              description="Developed a dynamic real estate web site with fully customizable sections (header, footer, content) powered by an admin portal text editor, handling frontend design, API integration, and SEO optimization using Next.js, React, Bootstrap and custom CSS."
+              status="Inprogress"
+              // ghLink="https://github.com/Rohit-web-dev/"
+              demoLink="https://emaar-dubai.srpl-ind.com/"
+            />
+          </Col>
+
+          <Col lg={4} md={6} className="project-card">
+            <ProjectCard
               imgPath={mascumen}
               isBlog={false}
-              title="Mascumen"
+              title="Mascumen With Admin Panel"
               useTech="Next.js, Redux(RTK), Bootstrap, API Integration"
-              duration="December 2023 - Inprogress"
+              duration="December 2023 - June 2024"
               description="Experienced Frontend Developer dedicated to the Mascumen eCommerce project, Specializing in cosmetics, skincare, and personal care products. Solely responsible for the project, I leverage Next.js, Redux Toolkit, Bootstrap, HTML, and CSS for frontend development, while integrating the API. Focused on creating seamless user experiences, I prioritize intuitive navigation and checkout processes. Passionate about driving technological innovation, I continuously enhance the platform's digital presence and functionality, contributing to its success as a dynamic and user-centric eCommerce solution."
-              status="Inprogress"
+              status="Done"
               // ghLink="https://github.com/Rohit-web-dev/"
               demoLink="https://mascumen.in/"
             />
